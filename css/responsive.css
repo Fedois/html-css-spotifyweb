@@ -1,0 +1,8 @@
+@media screen and (max-width:1100px) {
+    .column{
+        flex-wrap: wrap;
+    }
+    .song{
+        width: calc(100% / 4);
+    }
+}

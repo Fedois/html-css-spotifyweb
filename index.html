@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify</title>
@@ -12,31 +17,96 @@
 <body>
     <main class="main-container flex">
         <aside class="container-sx">
-            <header class="logo">
+            <header>
+                <div class="logo">
                     <!-- <img src="img/logo-small.svg" alt=""> -->
                     <img src="img/logo.svg" alt="">
+                </div>
             </header>
 
             <div class="navigation">
                 <nav class="nav-1">
-
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i> Home
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i> Cerca
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i> Libreria
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
 
                 <nav class="nav-2">
+                    <div class="playlist">
+                        <h4>PLAYLIST</h4>
 
+                        <div class="add">
+                            <button>+</button> <span>Crea playlist</span>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nome playlist
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
-            
             <div class="account">
-                    
+                <span><i class="fa-regular fa-circle-down"></i> Installa app</span>  
+                
+                <hr>
+
+                <h5><i class="fa-regular fa-circle-user"></i> John Doe</h5>
             </div>
         </aside>
 
         <main class="container-dx">
             <header>
                 <div class="upgrade">
-                    <a href="#">Effettua l'upgrade</a>
+                    <a href="#">EFFETTUA L'UPGRADE</a>
                 </div>
             </header>
 
@@ -44,22 +114,22 @@
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">IN EVIDENZA</a>   
                     </li>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">PODCAST</a>   
                     </li>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">CLASSIFICHE</a>   
                     </li>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">GENERI E MOOD</a>   
                     </li>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">NUOVE USCITE</a>   
                     </li>
                     <li>
-                        <a href="#">ciao</a>   
+                        <a href="#">SCOPRI</a>   
                     </li>
                 </ul>
             </nav>
@@ -73,7 +143,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -81,7 +151,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -89,7 +159,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -97,7 +167,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -105,7 +175,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -113,7 +183,7 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -133,13 +203,13 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
                         </div>
 
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
                         </div>
                     </div>
                 
@@ -156,13 +226,13 @@
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
                         </div>
 
                         <div class="song">
                             <img src="img/metal_lifting.jpg" alt="">
 
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
                         </div>
                     
                     </div>
