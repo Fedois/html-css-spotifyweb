@@ -1,0 +1,119 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+a{
+    text-decoration: none;
+    color: lightgray;
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 70px;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+
+/* container sx */
+aside{
+    width: 15vw;
+    background-color: black;
+}
+img{
+    width: 100%;
+}
+.logo img{
+    width: 120px;
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+/* container dx */
+.main-container .container-dx {
+    width: 85vw;
+    background-color: blue;
+    overflow: auto;
+}
+.upgrade{
+    text-align: end;
+}
+.upgrade a{
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+aside{
+    position: relative;
+}
+.nav-1{
+    background-color: red;
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+.nav-2{
+    background-color: red;
+    height: 250px;
+}
+.account{
+    background-color: green;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.main-nav{
+    background-color: blueviolet;
+    height: 50px;
+}
+.main-nav ul{
+    text-align: center;
+}
+.main-nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+
+footer {
+    background-color: gray;
+    height: 10vh;
+}
