@@ -13,13 +13,13 @@ a{
 header{
     height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    line-height: 70px;
+}
+.flex{
+    display: flex;
 }
 
 /* MAIN */
-main{
-    display: flex;
+.main-container{
     height: 90vh;
     width: 100%;
 }
@@ -39,6 +39,9 @@ img{
 }
 
 /* container dx */
+.container-dx > header{
+    background-color: red;
+}
 .main-container .container-dx {
     width: 85vw;
     background-color: blue;
@@ -101,19 +104,60 @@ aside{
 }
 .main-nav{
     background-color: blueviolet;
-    height: 50px;
+    margin-bottom: 2rem;
 }
 .main-nav ul{
     text-align: center;
+    padding: 10px 0;
 }
 .main-nav ul li{
     display: inline-block;
     margin: 0 10px;
 }
 
+.container-dx section{
+    height: 500px;
+    margin-bottom: 3rem;
+    background-color: yellow;
+}
+.box{
+    width: 95%;
+    margin: 0 auto;
+}
+.column{
+    /* justify-content: space-between; */
+    margin: 1.5rem -0.5rem;
+}
+.song{
+    border: 1px dashed black;
+    width: calc(100% / 6);
+    background-color: aquamarine;
+    margin: 0.5rem;
+    text-align: center;
+}
+.song > h3{
+    margin: 5px 0;
+}
+.popular-artists img{
+    border-radius: 50%;
+}
 
 
 footer {
     background-color: gray;
     height: 10vh;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+footer > div{
+    border: 1px solid black;
+    width: calc(100% / 3);
+}
+.part-sx img{
+    width: 50px;
+    vertical-align: middle;
+}
+.part-sx div{
+    display: inline-block;
+    vertical-align: middle;
 }
