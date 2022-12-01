@@ -9,6 +9,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+aside,
+.container-dx{
+    height: 100%;
+}
 :root{
     --color-1: white;
     --color-2: #7c7e83;
@@ -29,8 +33,9 @@ h4{
 ul{
     list-style: none;
 }
-span{
+span, a{
     font-weight: bold;
+    font-size: 0.8em;
 }
 button:hover{
     cursor: pointer;
@@ -42,17 +47,13 @@ a:hover{
 
 /********** MAIN **********/
 .main-container{
-    height: 90vh;
-}
-span, a{
-    font-size: 0.8em;
+    height: calc(100vh - 70px);
 }
 
 /* CONTAINER SX */
 .container-sx{
-    width: 250px;
+    width: 230px;
     background-color: black;
-    position: relative;
 }
 
 /* header */
@@ -63,7 +64,7 @@ span, a{
     width: 70%;
 }
 .logo .small{
-    width: 30px;
+    width: 25px;
     display: none;
 }
 
@@ -82,11 +83,13 @@ span, a{
     color: white;
 }
 .nav-2{
-    /* height: 100%; */
     padding: 1rem;
 }
 .playlist ul li{
-    margin-top: 0.5rem
+    margin-top: 1rem
+}
+.playlist h4{
+    color: white;
 }
 .add > button{
     height: 30px;
@@ -101,37 +104,41 @@ span, a{
     color: black;
     vertical-align: middle;
 }
-.add > span{
+.add > a{
     font-size: 1em;
     margin-left: 0.5rem;
+}
+.add:hover a{
+    color: var(--color-1);
+}
+.add:hover button{
+    background-color: var(--color-1);
 }
 
 /* account */
 .account{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.account{
-    padding: 1rem;
+    padding: 0 1rem;
     background-color: black;
     color: var(--color-2);
 }
 .account img{
-    /* margin-right: 0.5rem; */
     vertical-align: middle;
 }
-.account > span{
+.account > a{
     font-size: 0.7em;
     color: var(--color-2);
+    font-weight: bold;
+}
+.account > a:hover{
+    color: var(--color-1);
 }
 .account img:not(.user){
-    width: 10px;
+    width: 13px;
 }
 .account hr{
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
+    background-color: var(--color-2)
 }
 .account h5{
     display: inline-block;
@@ -146,13 +153,14 @@ span, a{
     font-size: 1.3em;
 }
 
-
-
 /* CONTAINER DX*/
-.main-container .container-dx {
-    width: 100%;
+.container-dx {
+    width: calc(100% - 230px);
     background-color: #141922;
     overflow: auto;
+}
+.container-dx img{
+    display: block;
 }
 .box{
     padding: 1rem;
@@ -161,26 +169,30 @@ span, a{
 
 /* header */
 .container-dx > header{
-    background-color: red;
     position: sticky;
     top: 0;
+    z-index: 20;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
 }
 .upgrade{
+    display: inline-block;
     text-align: end;
-    line-height: 70px;
+    padding: 1rem 0;
     margin-right: 1rem;
 }
+.upgrade:hover{
+    transform: scale(1.1);
+}
 .upgrade a{
+    display: inline-block;
     color: var(--color-1);
     border: 1px solid white;
     padding: 0.5rem 2rem;
     border-radius: 30px;
-    font-size: 0.8em;
 }
-.container-dx img{
-    display: block;
-}
+
 /* main navigation */
 .navigation-dx ul{
     text-align: center;
@@ -248,7 +260,7 @@ span, a{
 /********** FOOTER **********/
 footer {
     background-color: #282828;
-    height: 10vh;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
 }
@@ -299,10 +311,7 @@ footer a{
 .play{
     font-size: 1.5em;
 }
-.range{
-    
-}
-.range input{
+.minuts input{
     width: 80%;
     height: 5px;
     margin: 0 1rem;
@@ -319,4 +328,16 @@ footer a{
     width: 20%;
     height: 5px;
     margin: 0 0.5rem;
+}
+
+
+
+
+
+/* DEBUG */
+.navigation-sx{
+    height: calc(100% - 70px);
+}
+.account{
+    height: 70px;
 }
