@@ -11,7 +11,7 @@ body{
 }
 :root{
     --color-1: white;
-    --color-2: lightgray;
+    --color-2: #7c7e83;
 }
 a{
     text-decoration: none;
@@ -32,6 +32,9 @@ h4{
 ul{
     list-style: none;
 }
+span{
+    font-weight: bold;
+}
 
 /********** MAIN **********/
 .main-container{
@@ -50,18 +53,22 @@ span, a{
 
 /* header */
 .logo{
-    margin-left: 1rem;
+    padding: 1rem;
 }
 .logo img{
     width: 70%;
 }
 
 /* navigation sx*/
+.nav-1 i{
+    transform: scale(1.5);
+    margin-right: 0.3rem;
+}
 .nav-1 ul li{
     margin: 0.5rem 1rem;
 }
 .nav-2{
-    height: 250px;
+    /* height: 100%; */
     padding: 1rem;
 }
 .playlist ul li{
@@ -70,7 +77,7 @@ span, a{
 .add > button{
     height: 30px;
     width: 30px;
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     font-size: 1.5em;
     display: inline-block;
     text-align: center;
@@ -84,6 +91,12 @@ span, a{
 }
 
 /* account */
+.account{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .account{
     padding: 1rem;
     background-color: black;
@@ -106,12 +119,7 @@ span, a{
     font-size: 1.3em;
 }
 
-.account{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 
 /* CONTAINER DX*/
 .container-dx > header{
@@ -122,11 +130,11 @@ span, a{
 }
 .main-container .container-dx {
     width: 100%;
-    background-color: blue;
+    background-color: #141922;
     overflow: auto;
 }
 .box{
-    width: 95%;
+    padding: 1rem;
     margin: 0 auto;
 }
 
@@ -170,11 +178,10 @@ span, a{
     color: var(--color-2);
 }
 .column{
-    margin: 1.5rem -0.5rem;
+    /* margin: 1rem -1rem; */
 }
 .song{
     width: calc(100% / 6);
-    margin: 0.5rem;
     text-align: center;
 }
 .song > h4{
@@ -184,10 +191,75 @@ span, a{
     border-radius: 50%;
 }
 
+/* FOOTER */
+footer {
+    background-color: #282828;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+footer span{
+    font-size: 0.5em;
+}
+footer a{
+    margin-left: 0.5rem;
+}
 
+/* parte sinistra */
+.part-sx img{
+    margin-left: 0.5rem;
+    width: 40px;
+    vertical-align: middle;
+}
+.part-sx div{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 7px;
+}
+.part-sx .favourite{
+    margin-left: 2rem;
+}
+.part-sx h6{
+    color: var(--color-1);
+}
+.part-sx span{
+    color: var(--color-2);
+}
 
+/* parte centrale */
+.part-center{
+    text-align: center;
+    /* flex-grow: calc(1); */
+}
+.part-center > .buttons *{
+    border: none;
+    background-color: transparent;
+    margin: 0 0.5rem;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+.play{
+    transform: scale(2);
+}
+.range input{
+    width: 400px;
+    height: 5px;
+    margin: 0 1rem;
+    color: lightgray;
+}
+.part-center span{
+    color: var(--color-1);
+}
 
-
+/* parte destra */
+.part-dx{
+    text-align: end;
+}
+.part-dx > input{
+    width: 50%;
+    height: 5px;
+    margin: 0 0.5rem;
+}
 
 
 
@@ -209,24 +281,7 @@ span, a{
 
 /* DEBUG */
 
-
-
-footer {
-    background-color: gray;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-}
 footer > div{
-    border: 1px solid black;
-    width: calc(100% / 3);
-    height: 50px;
-}
-.part-sx img{
-    width: 50px;
-    vertical-align: middle;
-}
-.part-sx div{
-    display: inline-block;
-    vertical-align: middle;
+    /* border: 1px solid black; */
+    /* width: calc(100% / 3); */
 }
