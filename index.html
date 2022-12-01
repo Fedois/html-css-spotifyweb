@@ -16,30 +16,35 @@
 </head>
 <body>
     <main class="main-container flex">
+
+        <!-- inizio contenuto sx -->
         <aside class="container-sx">
             <header>
                 <div class="logo">
-                    <!-- <img src="img/logo-small.svg" alt=""> -->
-                    <img src="img/logo.svg" alt="">
+                    <img src="img/logo-small.svg" alt="Spotify" class="small">
+                    <img src="img/logo.svg" alt="Spotify" class="big">
                 </div>
             </header>
 
-            <div class="navigation">
+            <div class="navigation-sx">
                 <nav class="nav-1">
                     <ul>
                         <li>
+                            <img src="img/home.svg" alt="home">
                             <a href="#">
-                                <i class="fa-solid fa-house"></i> Home
+                                 Home
                             </a> 
                         </li>
                         <li>
+                            <img src="img/search.svg" alt="serach">
                             <a href="#">
-                                <i class="fa-solid fa-magnifying-glass"></i> Cerca
+                                 Cerca
                             </a>
                         </li>
                         <li>
+                            <img src="img/libreria.svg" alt="libreria">
                             <a href="#">
-                                <i class="fa-solid fa-lines-leaning"></i> Libreria
+                                 Libreria
                             </a>
                         </li>
                     </ul>
@@ -51,7 +56,7 @@
                         <h4>PLAYLIST</h4>
 
                         <div class="add">
-                            <button>+</button> <span>Crea playlist</span>
+                            <button>+</button><span>Crea playlist</span>
                         </div>
 
                         <ul>
@@ -97,14 +102,17 @@
             </div>
 
             <div class="account">
-                <span><i class="fa-regular fa-circle-down"></i> Installa app</span>  
+                <img src="img/download.svg" alt="Download">
+                <span>Installa app</span>
                 
                 <hr>
-
-                <h5><i class="fa-regular fa-circle-user"></i> John Doe</h5>
+                
+                <img src="img/profile.svg" alt="profile" class="user">
+                <h5>John Doe</h5>
             </div>
         </aside>
 
+        <!-- inizio contenuto principale dx -->
         <section class="container-dx">
             <header>
                 <div class="upgrade">
@@ -113,10 +121,10 @@
             </header>
 
             
-            <nav class="main-nav">
+            <nav class="navigation-dx">
                 <ul>
                     <li>
-                        <a href="#">IN EVIDENZA</a>   
+                        <a href="#">IN EVIDENZA</a>
                     </li>
                     <li>
                         <a href="#">PODCAST</a>   
@@ -143,7 +151,14 @@
 
                     <div class="column flex">
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/metal_lifting.jpg" alt="heavy metal">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
                             <h4>Heavy Metal</h4>
 
@@ -151,41 +166,78 @@
                         </div>
 
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/stranger.jpeg" alt="stranger things">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                           
+                            <h4>
+                                Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
+                            </h4>
 
-                            <h4>Heavy Metal</h4>
+                            <span>Kyle Dixon & Michael Stein</span>
+                        </div>
+
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/aquietplace.jpeg" alt="quiet place">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h4>A quiet place</h4>
 
                             <span>Subtitle</span>
                         </div>
 
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/split.jpeg" alt="split">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-                            <h4>Heavy Metal</h4>
-
-                            <span>Subtitle</span>
-                        </div>
-
-                        <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
-
-                            <h4>Heavy Metal</h4>
-
-                            <span>Subtitle</span>
-                        </div>
-
-                        <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
-
-                            <h4>Heavy Metal</h4>
+                            <h4>Split</h4>
 
                             <span>Subtitle</span>
                         </div>
 
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/cure.jpeg" alt="cure for wellness">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-                            <h4>Heavy Metal</h4>
+                            <h4>A cure for wellness</h4>
+
+                            <span>Subtitle</span>
+                        </div>
+
+                        <div class="song">
+                            <div class="img-song">
+                                <img src="img/sinister.jpeg" alt="sinister">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <h4>Sinister</h4>
 
                             <span>Subtitle</span>
                         </div>
@@ -203,15 +255,29 @@
 
                     <div class="column flex">
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/radar.jpeg" alt="radar">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-                            <h4>Heavy Metal</h4>
+                            <h4>Release Radar</h4>
                         </div>
 
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/mixdaily.jpeg" alt="mixdaily">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
-                            <h4>Heavy Metal</h4>
+                            <h4>Daily Mix 1</h4>
                         </div>
                     </div>
                 
@@ -226,18 +292,32 @@
                     <span>Più ascolti, più accurati i tuoi aggiornamenti.</span>
                     <div class="column flex">
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/youg.jpeg" alt="youg">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
                             <h4>Heavy Metal</h4>
                         </div>
 
                         <div class="song">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-song">
+                                <img src="img/einaudi.jpeg" alt="einaudi">
+                                <div class="screenplay">
+                                    <a href="#">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
 
                             <h4>Heavy Metal</h4>
                         </div>
-                    
                     </div>
+                
                 </div>
             </section>
         </section>
@@ -270,7 +350,9 @@
             </div>
             
             <div class="range">
-                <span>0:00</span><input type="range"><span>4:35</span>
+                <span>0:00</span>
+                <input type="range">
+                <span>4:35</span>
             </div>
         </div>
         <div class="part-dx">
