@@ -44,14 +44,14 @@ a:hover{
 
 /********** MAIN **********/
 .main-container{
-    height: calc(100vh - 90px);
+    height: calc(100vh - 80px);
     overflow: hidden;
 }
 
 /* CONTAINER SX */
 .container-sx{
     width: 230px;
-    min-height: 480px;
+    min-height: 400px;
     background-color: black;
 }
 
@@ -272,9 +272,12 @@ a:hover{
 }
 
 /********** FOOTER **********/ 
+footer *{
+    /* border: 1px solid white; */
+}
 footer {
     background-color: #282828;
-    height: 90px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -290,6 +293,10 @@ footer a{
 input{
     height: 3px;
 }
+input[type="range"]::-moz-range-progress {
+    background-color: green;
+    height: 1em;
+}
 
 /* parte sinistra */
 .part-sx{
@@ -302,7 +309,7 @@ input{
 }
 .part-sx div{
     vertical-align: middle;
-    line-height: 9px;
+    line-height: 10px;
 }
 .part-sx h5{
     color: var(--color-1);
@@ -316,8 +323,8 @@ input{
 }
 
 /* parte centrale */
-.part-center{
-    text-align: center;
+.part-center > .buttons{
+    justify-content: center;
 }
 .part-center > .buttons *{
     border: none;
