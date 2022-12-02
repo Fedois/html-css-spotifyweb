@@ -292,8 +292,7 @@ footer a{
 }
 input{
     height: 3px;
-    /* -webkit-appearance: none; */
-    color: greenyellow;
+    -webkit-appearance: none;
 }
 input::-webkit-slider-thumb{
     -webkit-appearance: none;
