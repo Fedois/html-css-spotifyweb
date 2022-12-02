@@ -47,7 +47,7 @@
     .account{
         text-align: center;
     }
-    .favorite{
-        margin-left: 1rem;
+    .favorite i{
+        display: block;
     }
 }

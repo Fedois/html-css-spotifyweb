@@ -292,12 +292,12 @@ footer a{
 }
 input{
     height: 3px;
+    /* -webkit-appearance: none; */
+    color: greenyellow;
 }
-input[type="range"]::-moz-range-progress {
-    background-color: green;
-    height: 1em;
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
 }
-
 /* parte sinistra */
 .part-sx{
     align-items: center;
@@ -314,12 +314,18 @@ input[type="range"]::-moz-range-progress {
 .part-sx h5{
     color: var(--color-1);
 }
-.part-sx span{
+.part-sx a{
     color: var(--color-2);
+    font-size: 0.6em;
+    margin: 0;
+}
+.part-sx a:hover{
+    color: var(--color-1);
+    text-decoration: underline;
 }
 .favorite{
     margin-left: 2rem;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 /* parte centrale */
@@ -336,6 +342,9 @@ input[type="range"]::-moz-range-progress {
 }
 .play{
     font-size: 1.5em;
+}
+.play:hover{
+    transform: scale(1.1);
 }
 .minuts{
     align-items: center;
