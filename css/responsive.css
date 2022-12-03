@@ -24,9 +24,9 @@
         width: 700px;
     }
     .logo .big,
-    .container-sx a,
-    .container-sx .playlist,
-    .account span,
+    .nav-1 span,
+    .playlist,
+    .account a,
     .account h5{
         display: none;
     }

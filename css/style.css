@@ -82,10 +82,16 @@ a:hover{
 .nav-1 ul li{
     padding: 0.5rem 1rem;
 }
+.nav-1 ul li span{
+    font-size: 1em;
+}
+.nav-1 ul li span:hover{
+    color: white;
+}
 .nav-1 ul li:first-child{
     box-shadow: inset 33px 0px 0px -30px var(--color-border);
 }
-.nav-1 ul li:first-child a{
+.nav-1 ul li:first-child span{
     color: white;
 }
 .playlist{
