@@ -198,15 +198,15 @@ a:hover{
     padding: 1.5rem 0;
     margin-right: 1rem;
 }
-.upgrade:hover{
-    transform: scale(1.1);
-}
 .upgrade a{
     display: inline-block;
     color: var(--color-1);
     border: 1px solid white;
     padding: 0.5rem 2rem;
     border-radius: 30px;
+}
+.upgrade a:hover{
+    transform: scale(1.1);
 }
 
 /* navigation dx */
@@ -278,9 +278,6 @@ a:hover{
 }
 
 /********** FOOTER **********/ 
-footer *{
-    /* border: 1px solid white; */
-}
 footer {
     background-color: #282828;
     height: 80px;
